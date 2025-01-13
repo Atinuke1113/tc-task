@@ -34,9 +34,7 @@ body {
 }
 
 .navbar .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-
+    width: 180px;
 }
 
 .nav-links {
@@ -122,15 +120,12 @@ body {
 
 .centered-heading .highlight {
     color: #0E3EC0;
-    /* Highlight "Free Books and Resources" in blue */
 }
 
 .centered-container {
     display: flex;
     justify-content: center;
-    /* Full viewport height */
     text-align: center;
-    /* Center align text */
 }
 
 .centered-container p {
@@ -142,18 +137,17 @@ body {
     font-weight: 400;
     line-height: 35.73px;
 
-    /* Remove default paragraph margins */
 }
 
-/* Centered Container Styling */
+
 .centered-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Full viewport height */
+
 }
 
-/* Button Styling */
+
 .blue-button {
     background-color: #0E3EC0;
     color: white;
@@ -533,8 +527,7 @@ body {
     padding: 40px 20px;
     text-align: center;
     background-color: white;
-    margin-left: 100px;
-    margin-right: 100px;
+
 }
 
 .reviews-section h2 {
@@ -644,8 +637,7 @@ body {
 .faq-section {
     padding: 40px 20px;
     background-color: white;
-    margin-left: 100px;
-    margin-right: 100px;
+
 }
 
 .faq-header {
@@ -737,8 +729,7 @@ body {
     padding: 40px 20px;
     display: flex;
     justify-content: center;
-    margin-left: 120px;
-    margin-right: 120px;
+
 }
 
 .contact-container {
