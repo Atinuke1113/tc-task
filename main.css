@@ -1,0 +1,933 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.imprima-regular {
+    font-family: "Imprima", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montaga-regular {
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-border {
+    border: 1px solid #E5E5EF;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+
+.nav-links li {
+    padding: 1px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #787878;
+    text-align: center;
+
+}
+
+.nav-links a.active {
+    color: #0E3EC0;
+}
+
+.nav-links a:hover {
+    color: #0E3EC0;
+
+}
+
+/* Mobile Menu Toggle Button */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    background-color: #0E3EC0;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+        background-color: white;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+.centered-heading {
+    margin-top: 60px;
+}
+
+.centered-heading h1 {
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    font-family: "Nunito", serif;
+}
+
+.centered-heading .highlight {
+    color: #0E3EC0;
+    /* Highlight "Free Books and Resources" in blue */
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    /* Full viewport height */
+    text-align: center;
+    /* Center align text */
+}
+
+.centered-container p {
+    font-size: 29px;
+    line-height: 1.8;
+    color: black;
+    margin-top: 0px;
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    line-height: 35.73px;
+
+    /* Remove default paragraph margins */
+}
+
+/* Centered Container Styling */
+.centered-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Full viewport height */
+}
+
+/* Button Styling */
+.blue-button {
+    background-color: #0E3EC0;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-family: "Nunito", serif;
+    font-weight: 600;
+    line-height: 22px;
+    border-radius: 8px;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.blue-button:hover {
+    background-color: blue;
+}
+
+
+/* Card Container Styling */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow cards to wrap on smaller screens */
+    justify-content: center;
+    gap: 32px;
+    /* Spacing between cards */
+    padding: 20px;
+}
+
+/* Individual Card Styling */
+.card {
+
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+
+
+.card:hover {
+    transform: translateY(-10px);
+    /* Hover effect to elevate the card */
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        /* Full-width cards on small screens */
+    }
+}
+
+
+/* Partners Section Styling */
+.partners-section {
+    background-color: #F1F3F5;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.partners-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.partners-section {
+    background-color: #F1F3F5;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.partners-section h2 {
+    margin-top: 20px;
+    font-size: 40px;
+    line-height: 54.56px;
+    font-weight: 700;
+    font-family: "Nunito", serif;
+    color: #333;
+}
+
+.partners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    padding: 7.65px;
+    margin: 0 auto;
+}
+
+.partner-button {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 7.65px;
+    border: none;
+    width: calc(25% - 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-button img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.partner-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .partner-button {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .partner-button {
+        width: calc(100% - 20px);
+
+    }
+}
+
+
+/* Courses Section Styling */
+.courses-section {
+    padding: 40px 20px;
+    background-color: white;
+
+}
+
+.courses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto 30px;
+}
+
+.courses-header h2 {
+    font-size: 40px;
+    color: #1D1D1D;
+    margin: 0;
+    font-family: "Nunito", serif;
+    font-weight: 700;
+}
+
+.courses-header .view-all {
+    font-size: 24px;
+    font-weight: 400;
+    color: #1D1D1D;
+    font-family: "Nunito", serif;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.courses-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-card {
+    background-color: #ffffff;
+    border: 1px solid #E5E5EF;
+    border-radius: 16px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1D1D1D;
+    font-family: "Nunito", serif;
+    text-align: left;
+}
+
+.course-card p {
+    text-align: left;
+    font-family: "Montaga", serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1D1D1DCC;
+    line-height: 22.18px;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .courses-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .courses-container {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .course-card {
+        width: 100%;
+    }
+}
+
+
+/* About Us Section */
+.about-us-section {
+    background-color: #F1F3F5;
+    padding: 40px 20px;
+}
+
+.about-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.about-us-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.about-us-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-content {
+    flex: 1.5;
+    max-width: 600px;
+}
+
+.about-us-content h2 {
+    font-size: 40px;
+    font-family: "Nunito", serif;
+    font-weight: 700;
+    color: #1D1D1D;
+    margin-bottom: 10px;
+}
+
+.about-us-content p {
+    font-size: 20px;
+    line-height: 41px;
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    letter-spacing: 2%;
+    color: #1D1D1DCC;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-us-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-us-image {
+        max-width: 100%;
+    }
+
+    .about-us-content {
+        max-width: 100%;
+    }
+}
+
+
+/* Why Smart Learn Section */
+.why-smart-learn {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.why-smart-learn h2 {
+    font-size: 40px;
+    font-family: "Nunito", serif;
+    font-weight: 700;
+    color: #1D1D1D;
+    margin-bottom: 30px;
+}
+
+.smart-learn-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    gap: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-family: "Nunito", serif;
+    color: #1D1D1D;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 12px;
+    font-family: "Montaga" serif;
+    font-weight: 400;
+    color: #1D1D1DCC;
+    line-height: 1.5;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+
+
+.reviews-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.reviews-section h2 {
+    font-size: 40px;
+    font-family: "Nunito", serif;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.reviews-carousel {
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+}
+
+.reviews-wrapper {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.review-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.review-header h3 {
+    color: #0C0C0C;
+    font-family: "Lexend", serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.review-header p {
+    font-family: "Lexend", serif;
+    margin: 0;
+    font-size: 20px;
+    color: #1D1D1DCC;
+    font-weight: 400;
+}
+
+.review-text {
+    background-color: #F6F6F6;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: #F6F6F6;
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    letter-spacing: 3.5%;
+
+}
+
+/* Carousel Buttons */
+.carousel-buttons {
+    margin-top: 20px;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #7F7F7F;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background-color: #0E3EC0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .review-card {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .review-card {
+        width: 200px;
+    }
+}
+
+
+.faq-section {
+    padding: 40px 20px;
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.faq-header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.faq-header h2 {
+    font-family: "Nunito", serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1D1D1D;
+    margin: 0;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.faq-question {
+    font-family: "Nunito", serif;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    align-items: center;
+    font-size: 24px;
+    padding: 2px;
+    color: #1D1D1D;
+}
+
+.toggle-icon {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #060606;
+    transition: transform 0.2s ease;
+}
+
+.faq-item .toggle-icon {
+    transform: rotate(180deg);
+}
+
+
+.faq-answer {
+    font-family: "Montaga", serif;
+    display: none;
+    letter-spacing: 2%;
+    font-size: 18px;
+    color: #1D1D1DB2;
+    background-color: #F6F6F6;
+    line-height: 1.5;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 16px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .toggle-icon {
+    content: "-";
+    transform: rotate(180deg);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .faq-item {
+        padding: 10px;
+    }
+}
+
+
+.contact-section {
+    background-color: #000000;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.contact-container {
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+
+.contact-container h2 {
+    font-family: "Nunito", serif;
+    font-size: 48px;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-family: "Montaga", serif;
+    color: #FFFFFFCC;
+    font-size: 20px;
+    font-weight: 400px;
+    margin-bottom: 30px;
+    line-height: 32px;
+}
+
+.contact-button {
+    background-color: #ffffff;
+    color: #1D1D1D;
+    font-family: "Nunito", serif;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #0E3EC0;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-container p {
+        font-size: 0.9rem;
+    }
+
+    .contact-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+
+
+
+.footer {
+    margin-top: 40px;
+    background-color: #F1F3F5;
+    color: #000C2B;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    margin-left: 100px;
+    flex: 1;
+    max-width: 400px;
+    margin-right: 100px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-top: 20px
+}
+
+.footer-column h3 {
+    font-family: "Nunito", serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-family: "Lexend", serif;
+    font-size: 13px;
+    line-height: 41px;
+    margin-bottom: 10px;
+    letter-spacing: 2%;
+}
+
+.social-media-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.social-link img:hover {
+    transform: scale(1.1);
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.footer-left,
+.footer-right {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 80px;
+    font-family: "Nunito", serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000C2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact Information */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: "Lexend", serif;
+    font-size: 13px;
+    line-height: 41px;
+    margin-bottom: 10px;
+    letter-spacing: 2%;
+}
+
+.location,
+.phone,
+.email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Footer Bottom */
+.copyright-circle {
+    font-size: 13px;
+    border-radius: 50%;
+    padding: 0 5px;
+    background-color: #ffffff;
+    color: #000C2B;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
